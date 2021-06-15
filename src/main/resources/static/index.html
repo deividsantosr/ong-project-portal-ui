@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NOGS - Portal UI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="content first-content">
+        <div class="first-column">
+            <h2 class="title title-primary">ola, amigo!</h2>
+            <p class="description description-primary">Para entrar no Portal NOGs é necessário fazer login</p>
+        </div>
+        <div class="second-column">
+            <h2 class="title title-second">Fazer Login</h2>
+            <p class="description description-second">Faça login com sua conta criada:</p>
+            <form class="form" id="login" autocomplete="off">
+
+                <label class="label-input">
+                    <i class="far fa-envelope icon-modify"></i>
+                    <input type="text" placeholder="Email" name="email" autocomplete="off">
+                </label>
+
+                <label class="label-input">
+                    <i class="fas fa-lock icon-modify"></i>
+                    <input type="password" placeholder="Senha" name="password" autocomplete="off">
+                </label>
+
+                <a class="password" href="#">Esqueceu sua senha?</a>
+                <button id="signup" class="btn btn-second">Login</button>
+            </form>
+        </div><!-- second column -->
+    </div><!-- first content -->
+    <div class="content second-content">
+        <div class="first-column">
+            <h2 class="title title-primary">Bem Vindo de Volta!</h2>
+            <p class="description description-primary">Para se manter conectado com a gente no Portal NOGs</p>
+            <button id="signin" class="btn btn-primary">Sair</button>
+        </div>
+        <div class="second-column">
+            <h2 class="title title-second">Cadastrar ONG</h2>
+            <p class="description description-second">Cadastro de ONG</p>
+            <form class="form" id="create-ong">
+                <label class="label-input">
+                    <input type="text" placeholder="Nome" name="name">
+                </label>
+
+                <label class="label-input">
+                    <i class=""></i>
+                    <select placeholder="Categoria" name="categoryId">
+                        <option selected disabled>Selecione</option>
+                        <option value="1">Assistência social</option>
+                        <option value="2">Cultura</option>
+                        <option value="3">Saúde</option>
+                        <option value="4">Meio ambiente</option>
+                        <option value="5">Desenvolvimento e defesa de direitos</option>
+                        <option value="6">Habitação</option>
+                    </select>
+                </label>
+
+                <label class="label-input">
+                    <i class=""></i>
+                    <input type="description" placeholder="Descrição" name="description">
+                </label>
+
+                <button class="btn btn-second" id="save-ong">Salvar</button>
+            </form>
+        </div><!-- second column -->
+    </div><!-- second-content -->
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
